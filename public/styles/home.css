@@ -1,0 +1,35 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+/* Top Banner */
+
+.container-fluid {
+    display: flex;
+}
+
+.header {
+    background-color: blue;
+    color:red;
+    height: 60px;
+    width: 100vw;
+    justify-content: center;
+    padding: 8px;
+
+}
+
+.img {
+    background-color: orange;
+    color: red;
+    height: 300px;
+    width: 100vw;
+    justify-content: center;
+    padding: 8px;
+
+}
+
+
