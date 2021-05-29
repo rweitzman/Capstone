@@ -4,25 +4,32 @@
 
 body {
     background-color: aqua;
-    
 }
 
-.container {
+/* Top Banner */
+
+.container-fluid {
     display: flex;
 }
 
 .header {
     background-color: blue;
-    color: red;
-    height: 40px;
+    color:red;
+    height: 60px;
     width: 100vw;
-    
-}
-
-h2 {
     justify-content: center;
+    padding: 8px;
+
 }
 
-/* .text-center {
-    text-align: center;
-} */
+.img {
+    background-color: orange;
+    color: red;
+    height: 300px;
+    width: 100vw;
+    justify-content: center;
+    padding: 8px;
+
+}
+
+

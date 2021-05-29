@@ -10,6 +10,7 @@ app.get('/', function (req, res) {
 
 /**** SERVE IMAGES AND CSS ****/
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/images"));
 
 app.listen(PORT, function () {
     console.log("I'm a little server hear me roar");
