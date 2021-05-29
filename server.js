@@ -1,8 +1,15 @@
 const express = require("express");
 const app = express();
 const PORT = 4000;
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', function (req, res) {
+    res.render('home')
+});
+
+
+/**** SERVE IMAGES AND CSS ****/
+app.use(express.static(__dirname + "/public"));
 
 app.listen(PORT, function () {
     console.log("I'm a little server hear me roar");
