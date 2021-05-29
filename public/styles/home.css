@@ -12,7 +12,7 @@ body {
     display: flex;
 }
 
-.header {
+.banner {
     background-color: blue;
     color:red;
     height: 60px;
@@ -22,7 +22,20 @@ body {
 
 }
 
-.img {
+.nav-bar {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.landing-img {
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* .img {
     background-color: orange;
     color: red;
     height: 300px;
@@ -30,6 +43,6 @@ body {
     justify-content: center;
     padding: 8px;
 
-}
+} */
 
 
