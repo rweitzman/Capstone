@@ -1,0 +1,166 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color:rgb(217, 195, 170);
+}
+
+/* Top Banner */
+
+.container-fluid {
+    display: flex;
+}
+
+.banner {
+    background-color: cornflowerblue;
+    color:rgb(58, 71, 96);
+    height: 60px;
+    width: 100vw;
+    justify-content: center;
+    padding: 8px;
+    
+
+}
+
+/* Navbar */
+
+nav {
+    flex-direction:row;
+    display: inline-block;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    /* justify-content: center; */
+    /* .navbar-brand{/* background-color: #35d0ba; */
+    /* padding-left: 20px;} */
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: rgb(58, 71, 96);
+    font-size: 30px;
+}
+
+/* Landing Img Section */
+.landing-img {
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    object-fit: cover;
+}
+/* ------> Call to Action Text */
+button {
+    z-index: 5;
+    background-color: rgb(141, 46, 48);
+}
+
+/* Info Graphics */ 
+section {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.graphics {
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.icon {
+    justify-content: center;
+}
+
+.infographics {
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    height: 175px;
+    width: 33vh;
+}
+
+.info {
+    color: rgb(58, 71, 96);
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.human-grade {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+    
+.organic {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+
+.grassfed {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Recipe images/buttons */
+
+.recipe {
+    background-color: cornflowerblue;
+    width: 33vw;
+    height: 500px;
+}
+/* ----> make buttons and text and small call to actions */
+
+/* bowl of food image */
+
+ .bowl {
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+ }
+
+ /* How it Works */
+
+ section {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.how {
+
+}
+
+.how-it-works {
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 25vh;
+}
+
+.how-to {
+    color: rgb(58, 71, 96);
+    font-size: 1.4em;
+}
+
+.step {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+}
+
+
+
