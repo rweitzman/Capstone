@@ -1,10 +1,24 @@
+// * === Const and Require === * //
 const express = require("express");
+// const db = require("./models");
+// const controllers = require("./controllers");
 const app = express();
 const PORT = 4000;
+// const methodOverride = require("method-override");
 app.set("view engine", "ejs");
+// require("dotenv").config();
+// const { response } = require("express");
+// const router = express.Router();
+// const session = require("express-session");
+// const MongoStore = require("connect-mongo");
+// const bcrypt = require("bcryptjs");
 
 app.get('/', function (req, res) {
     res.render('home')
+});
+
+app.get('/index', function (req, res) {
+    res.render('index')
 });
 
 
