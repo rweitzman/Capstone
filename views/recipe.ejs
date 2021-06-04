@@ -13,17 +13,18 @@
 <body>
     
     <div class="container-fluid">
-        <div class="row banner">
+        <div class="row banner" id="home">
                 <h2>Last Chance to save 50% off First Order!</h2>
         </div>
     </div>
 
     <div class="container-fluid">
             <div class="row nav-bar">
-                <nav>
-                    <span>
                         <div class="navbar-brand col-4">
-                            <a class="navbar-item" href="/">Aria</a>
+                            <div>
+                                <a class="navbar-item col-4" href="/#recipes"></a>Recipes</a>
+                            </div>
+                            <a class="navbar-item" href="/#home">Aria</a>
                         </div>
                         <div>
                             <a class="navbar-item col-4" id="myBtn">Sign Up</a>
@@ -31,17 +32,17 @@
                         <div>
                             <a class="navbar-item col-4" id="myBtn2">Sign In</a>
                         </div>
-                    </span>
-                </nav>
             </div>
     </div>
 
     <div class="row">
         <div class="">
-                        <a class="recipe" href=""> 
-                            <img src="">
-                            <p class="recipe">Paragraph</p>
-                        </a>     
+            <h1>Cheese Show Page</h1>
+            <a href="/">Home!</a>
+            <p><%= Recipes.name %> </p>
+            <p><%= Recipes.img %> </p>
+            <p><%= Recipes.ingredients %></p>
+            <p><%= Recipes.description %></p>     
         </div>
     </div>
     
