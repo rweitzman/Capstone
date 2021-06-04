@@ -18,31 +18,31 @@
         </div>
     </div>
 
+   
     <div class="container-fluid">
-            <div class="row nav-bar">
-                        <div class="navbar-brand col-4">
-                            <div>
-                                <a class="navbar-item col-4" href="/#recipes"></a>Recipes</a>
-                            </div>
-                            <a class="navbar-item" href="/#home">Aria</a>
-                        </div>
-                        <div>
-                            <a class="navbar-item col-4" id="myBtn">Sign Up</a>
-                        </div>
-                        <div>
-                            <a class="navbar-item col-4" id="myBtn2">Sign In</a>
-                        </div>
-            </div>
-    </div>
+        <div class="row nav-bar">
+                    <div class="navbar-brand col-4">
+                        <a class="navbar-item" href="/#home">Aria</a>
+                    </div>
+                    <div>
+                        <a class="navbar-item col-4" id="myBtn">Sign Up</a>
+                    </div>
+                    <div>
+                        <a class="navbar-item col-4" id="myBtn2">Sign In</a>
+                    </div>
+        </div>
+</div>
 
-    <div class="row">
-        <div class="">
-            <h1>Cheese Show Page</h1>
-            <a href="/">Home!</a>
-            <p><%= Recipes.name %> </p>
-            <p><%= Recipes.img %> </p>
-            <p><%= Recipes.ingredients %></p>
-            <p><%= Recipes.description %></p>     
+    <div class="container-fluid" id="recipes">
+        <div class="row">
+            <section class="card"> 
+                <ul>
+                    <li><p><%= Recipes.name %></p></li>
+                    <li><img src="<%= Recipes.img %>"></li>
+                    <li><%= Recipes.ingredients %></li>
+                    <button><%= Recipes.name %></button>
+              </ul> 
+            </section>
         </div>
     </div>
     
