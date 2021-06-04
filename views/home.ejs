@@ -29,23 +29,35 @@
 
     <div class="container-fluid">
         <div class="row landing-img">
-            <img src="https://i.kinja-img.com/gawker-media/image/upload/s--vatSl-DK--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/nmgyuepiyew1eiftirzq.jpg">
+            <button class="hero-button">CLICK</button>
         </div>
-        <button>CLICK</button>
     </div>
 
-    <div class="container-fluid" id="recipes">
+    <div class="container-fluid">
         <div class="row">
-            <div class="card"> 
-                <ul class="card-index">
-                <% allRecipes.forEach((Recipes, index) => { %>
-                    <li><p><%= Recipes.name %></p></li>
-                    <li><img src="<%= Recipes.img %>"></li>
-                    <li><%= Recipes.ingredients %></li>
-                    <a href="/Recipes/<%= index %>"><button><%= Recipes.name %></button> </a> 
+            <img class="bowl" src="https://perfectlyrawsome.com/wp-content/uploads/2019/06/49432667_2246837515588357_7921554165103329280_o.jpg">
+        </div>
+        <button><a href="/#myBtn">Go To Sign-Up</a></button>
+        <button><a href="/#recipes">Go To Recipes</a></button>
+    </div>
+    
+
+    <div class="container-fluid" id="recipes">
+        <div class="row w-100">
+            <section class="card-index">  
+                <% allRecipes.forEach((recipe, index) => { %>
+                    <div class="card">
+                        <div class="card__header"><p><%= recipe.name %></p></div>
+                        <div class="card__content">
+                            <img src="<%= recipe.img %>">
+                            <p><%= recipe.description %></p>
+                        </div>
+    
+                        <div class="card__footer"><a href="/Recipes/<%= index %>"><button><%= recipe.name %></button> </a> </div>  
+                    </div>
                     <% }); %>
-              </ul> 
-            </div>
+
+            </section>
         </div>
     </div>
 
@@ -117,13 +129,6 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <img class="bowl" src="https://perfectlyrawsome.com/wp-content/uploads/2019/06/49432667_2246837515588357_7921554165103329280_o.jpg">
-        </div>
-        <button><a href="/#myBtn">Go To Sign-Up</a></button>
-        <button><a href="/#recipes">Go To Recipes</a></button>
-    </div>
     
     
 </body>
