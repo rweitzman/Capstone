@@ -13,35 +13,36 @@
 <body>
     
     <div class="container-fluid">
-        <div class="row banner">
+        <div class="row banner" id="home">
                 <h2>Last Chance to save 50% off First Order!</h2>
         </div>
     </div>
 
+   
     <div class="container-fluid">
-            <div class="row nav-bar">
-                <nav>
-                    <span>
-                        <div class="navbar-brand col-4">
-                            <a class="navbar-item" href="/">Aria</a>
-                        </div>
-                        <div>
-                            <a class="navbar-item col-4" id="myBtn">Sign Up</a>
-                        </div>
-                        <div>
-                            <a class="navbar-item col-4" id="myBtn2">Sign In</a>
-                        </div>
-                    </span>
-                </nav>
-            </div>
-    </div>
+        <div class="row nav-bar">
+                    <div class="navbar-brand col-4">
+                        <a class="navbar-item" href="/#home">Aria</a>
+                    </div>
+                    <div>
+                        <a class="navbar-item col-4" id="myBtn">Sign Up</a>
+                    </div>
+                    <div>
+                        <a class="navbar-item col-4" id="myBtn2">Sign In</a>
+                    </div>
+        </div>
+</div>
 
-    <div class="row">
-        <div class="">
-                        <a class="recipe" href=""> 
-                            <img src="">
-                            <p class="recipe">Paragraph</p>
-                        </a>     
+    <div class="container-fluid" id="recipes">
+        <div class="row">
+            <section class="card"> 
+                <ul>
+                    <li><p><%= Recipes.name %></p></li>
+                    <li><img src="<%= Recipes.img %>"></li>
+                    <li><%= Recipes.ingredients %></li>
+                    <button><%= Recipes.name %></button>
+              </ul> 
+            </section>
         </div>
     </div>
     
