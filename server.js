@@ -1,9 +1,9 @@
 // * === Const and Require === * //
 const express = require("express");
-// const db = require("./models");
+const db = require("./models");
 // const controllers = require("./controllers");
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 // const methodOverride = require("method-override");
 app.set("view engine", "ejs");
 // require("dotenv").config();
@@ -13,12 +13,20 @@ app.set("view engine", "ejs");
 // const MongoStore = require("connect-mongo");
 // const bcrypt = require("bcryptjs");
 
-app.get('/', function (req, res) {
-    res.render('home')
+
+
+app.get("/", function (req, res) {
+    const context = {
+        allRecipes: db.Recipes,
+    };
+    res.render("home", context);
 });
 
-app.get('/index', function (req, res) {
-    res.render('index')
+app.get("/Recipes/:index", function (req, res) {
+    const context = {
+        Recipes: db.Recipes[req.params.index],
+    };
+   res.render("recipe", context) 
 });
 
 
