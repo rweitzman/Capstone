@@ -36,8 +36,8 @@
 
     <div class="container-fluid" id="recipes">
         <div class="row">
-            <section class="card"> 
-                <ul>
+            <div class="card"> 
+                <ul class="card-index">
                 <% allRecipes.forEach((Recipes, index) => { %>
                     <li><p><%= Recipes.name %></p></li>
                     <li><img src="<%= Recipes.img %>"></li>
@@ -45,7 +45,7 @@
                     <a href="/Recipes/<%= index %>"><button><%= Recipes.name %></button> </a> 
                     <% }); %>
               </ul> 
-            </section>
+            </div>
         </div>
     </div>
 
