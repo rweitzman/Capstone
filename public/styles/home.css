@@ -106,12 +106,79 @@ nav {
 .card__footer {
  height: 50px;
 }
-/* ALL RECIPE STYLING */
-.card {
+
+/* How- T0 */
+.hiw-index{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    display: inline-block;
+    justify-content: space-around;
+    padding: 50px;
+
 }
+
+.hiw-card{
+    width: 400px;
+    height: 350px;
+    border: none;
+}
+
+.hiw__header {
+    height: 50px;
+}
+
+.hiw__header p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.hiw__content {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+}
+
+.hiw__content  img {
+    width: 100%;
+    height: 150px;
+}
+
+.hiw__footer {
+ height: 50px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.how {
+    margin: 100px, 10px, 10px, 10px;
+    text-align: center;
+}
+
+.how-it-works {
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 25vh;
+}
+
+.how-to {
+    color: rgb(58, 71, 96);
+    font-size: 1.4em;
+}
+
+.step {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+}
+
+
+
 
 
 
@@ -141,9 +208,7 @@ ul {
     height: 175px;
     width: 33vh;
 }
-.how-it-works {
-    background-color: purple;
-}
+
 
 .info {
     color: rgb(58, 71, 96);
@@ -187,34 +252,8 @@ ul {
     object-fit: cover;
  }
 
- /* How it Works */
+ 
 
-ul {
-    list-style-type: none;
-}
-
-.how {
-    margin: 100px, 10px, 10px, 10px;
-    text-align: center;
-}
-
-.how-it-works {
-    display:flex;
-    flex-direction: row;
-    background-color:rgb(255, 255, 255);
-    height: 500px;
-    width: 25vh;
-}
-
-.how-to {
-    color: rgb(58, 71, 96);
-    font-size: 1.4em;
-}
-
-.step {
-    color: rgb(58, 71, 96);
-    font-size: 1em;
-}
 
 
 
