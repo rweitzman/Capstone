@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:rgb(217, 195, 170);
+    background-color:rgb(255, 255, 255);
 }
 
 /* Top Banner */
@@ -12,18 +12,7 @@ body {
     display: flex;
 }
 
-.banner {
-    z-index: 10;
-    position: fixed;
-    background-color: cornflowerblue;
-    color:rgb(58, 71, 96);
-    height: 60px;
-    width: 100vw;
-    justify-content: center;
-    padding: 8px;
-    
 
-}
 
 /* Navbar */
 
@@ -49,7 +38,6 @@ nav {
     color: rgb(58, 71, 96);
     font-size: 30px;
     padding: 5px;
-    margin:
 }
 
 /* Landing Img Section */
@@ -88,7 +76,8 @@ nav {
 
 .card{
     width: 400px;
-    height: 250px;
+    height: 350px;
+    border: none;
 }
 
 .card__header {
@@ -124,9 +113,6 @@ nav {
     display: inline-block;
 }
 
-.card-index {
-    width: 30vw;
-}
 
 
 /* Info Graphics */ 
