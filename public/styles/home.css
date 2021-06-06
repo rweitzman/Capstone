@@ -1,0 +1,220 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+}
+
+/* Top Banner */
+
+.container-fluid {
+    display: flex;
+}
+
+
+
+/* Navbar */
+
+nav {
+    flex-direction:row;
+    display: flex;
+    width: 100vw;
+}
+
+.nav-bar {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    /* justify-content: center; */
+    /* .navbar-brand{/* background-color: #35d0ba; */
+    /* padding-left: 20px;} */
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: rgb(58, 71, 96);
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* Landing Img Section */
+.landing-img {
+    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--vatSl-DK--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/nmgyuepiyew1eiftirzq.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 480px;
+    position:relative;
+}
+/* ------> Call to Action Text */
+.hero-button {
+    z-index: 5;
+    background-color: rgb(141, 46, 48);
+    height: 100px;
+    width: 300px;
+    border: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+
+}
+
+/* Recipe Cards */
+.card-index{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+}
+
+.card{
+    width: 400px;
+    height: 350px;
+    border: none;
+}
+
+.card__header {
+    height: 50px;
+}
+
+.card__header p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.card__content {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+}
+
+.card__content  img {
+    width: 100%;
+    height: 150px;
+}
+
+.card__footer {
+ height: 50px;
+}
+/* ALL RECIPE STYLING */
+.card {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+
+
+
+/* Info Graphics */ 
+section {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.graphics {
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.icon {
+    justify-content: center;
+}
+
+.infographics {
+    
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    height: 175px;
+    width: 33vh;
+}
+.how-it-works {
+    background-color: purple;
+}
+
+.info {
+    color: rgb(58, 71, 96);
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.human-grade {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+    
+.organic {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+
+.grassfed {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Recipe images/buttons */
+
+.recipe {
+    background-color: cornflowerblue;
+    width: 33vw;
+    height: 500px;
+}
+/* ----> make buttons and text and small call to actions */
+
+/* bowl of food image */
+
+ .bowl {
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+ }
+
+ /* How it Works */
+
+ul {
+    list-style-type: none;
+}
+
+.how {
+    margin: 100px, 10px, 10px, 10px;
+    text-align: center;
+}
+
+.how-it-works {
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 25vh;
+}
+
+.how-to {
+    color: rgb(58, 71, 96);
+    font-size: 1.4em;
+}
+
+.step {
+    color: rgb(58, 71, 96);
+    font-size: 1em;
+}
+
+
+

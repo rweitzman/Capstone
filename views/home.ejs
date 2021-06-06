@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <title>Aria</title>
+</head>
+<body>
+   
+
+    <div class="container-fluid">
+            <div class="row nav-bar">
+                        <div class="navbar-brand col-4">
+                            <a class="navbar-item" href="/#home">Aria</a>
+                        </div>
+                        <div>
+                            <a class="navbar-item col-4" id="myBtn">Sign Up</a>
+                        </div>
+                        <div>
+                            <a class="navbar-item col-4" id="myBtn2">Sign In</a>
+                        </div>
+            </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row landing-img">
+            <button class="hero-button">CLICK</button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row w-100">
+            <section class="col infographics">
+                <ul>
+                    <li class="icon"><i class="fas fa-dog"></i></li>
+                    <li class="graphics"><p class="info">Human-Grade Food</p></li>
+                    <li class="graphics"><p class="human-grade">The best quality ingredients for all of your family members</p></li>
+                </ul>
+            </section>
+
+            <section class="col infographics">
+                <ul>
+                    <li class="icon"><i class="fas fa-seedling"></i></li>
+                    <li class="graphics"><p class="info">100% Organic Ingredients</p></li>
+                    <li class="graphics"><p class="organic">Good for you pet, good for the Earth</p></ul></li>
+                </ul>
+            </section>
+
+            <section class="col infographics">
+                <ul>
+                    <li class="icon"><i class="fa-solid fa-heart"></i></li>
+                    <li class="graphics"><p class="info">Grassfed and Pasture Raised</p></li>
+                    <li class="graphics"><p class="grassfed">Humane meat to keep your pet and the ecosystems healthy</p></li>    
+                </ul>
+            </section>
+
+        </div>
+    </div>
+    
+
+    <div class="container-fluid" id="recipes">
+        <div class="row w-100">
+            <section class="card-index">  
+                <% allRecipes.forEach((recipe, index) => { %>
+                    <div class="card">
+                        <div class="card__header"><p><%= recipe.name %></p></div>
+                        <div class="card__content">
+                            <img src="<%= recipe.img %>">
+                            <p><%= recipe.description %></p>
+                        </div>
+    
+                        <div class="card__footer"><a href="/Recipes/<%= index %>"><button><%= recipe.name %></button> </a> </div>  
+                    </div>
+                    <% }); %>
+
+            </section>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img class="bowl" src="https://perfectlyrawsome.com/wp-content/uploads/2019/06/49432667_2246837515588357_7921554165103329280_o.jpg">
+        </div>
+        <button><a href="/#myBtn">Go To Sign-Up</a></button>
+        <button><a href="/#recipes">Go To Recipes</a></button>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row w-100">
+            <section class="col how-it-works">
+                <ul>
+                    <li class="how"><p class="how-to">Create Free Account</p></li>
+                    <li class="how"><p class="human-grade">Sign up for free! Customize our service for your pup's dietary needs"</p></li>
+                </ul>
+                <button><a href="/#myBtn">Go To Sign-Up</a></button>
+            </section>
+
+            <section class="col how-it-works">
+                <ul>
+                    <li class="how"><p class="how-to">Select Recipes</p></li>
+                    <li class="how"><p class="organic">Choose from our recipes to fit your fur baby's needs! Select as many as you'd like and change at amny time.</p></ul></li>
+                </ul>
+                <button><a href="/#recipes">Go To Recipes</a></button>
+            </section>
+
+            <section class="col how-it-works">
+                <ul>
+                    <li class="how"><p class="how-to">Choose Frequency of Servings</p></li>
+                    <li class="how"><p class="grassfed">We will help you decide on how much to feed your BFF, based on age, weight, activity, and of course, how much you'd like to provide!</p></li>    
+                </ul>
+                <button><a href="/#recipes">Go To Recipes</a></button>
+            </section>
+
+            <section class="col how-it-works">
+                <ul>
+                    <li class="how"><p class="how-to">Leave A Review</p></li>
+                    <li class="how"><p class="grassfed">Well... you don't HAVE to, but leaving a comment will help tell our community how we are doing!</p></li>    
+                </ul>
+                <button><a href="/#recipes">Go To Recipes</a></button>
+            </section>
+
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
