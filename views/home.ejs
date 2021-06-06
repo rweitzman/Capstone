@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/scripts/main.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,12 +29,31 @@
                         <div>
                             <a class="navbar-item sign-in" id="myBtn2">Sign In</a>
                         </div>
+
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                                  <h1 class="title">Log In</h1>
+                                    <form method="post" action="">
+                                      <input type="text" id="username" name="username" placeholder="Username" /><br>
+                                      <input type="password" id="password" name="password" placeholder="Password" /><br>
+                                      <input type="submit" name="Submit" id="submit" value="Submit">
+                                    </form>
+                                  <h2 class="title">Sign Up</h2>
+                                    <form method="post" action="">
+                                      <input type="text" name="location" placeholder="location info">
+                                      <br>
+                                      <input type="submit" name="Submit" id="submit" value="Sign Up">
+                                    </form>
+                            </div>
+                          </div>
             </div>
     </div>
 
+
     <div class="container-fluid">
         <div class="row landing-img">
-            <button class="hero-button"><b>See Our Recipes</b></button>
+            <a href="/#recipes"><button class="hero-button"><b>See Our Recipes</b></button></a>
             <p class="hero-heading">Fresh Made 100% Organic Dog Food</p>
             <p class="hero-description"><strong>Let us help you stop feeding your dog that CRUDDY food! Freshly made, nutritionally balanced, 100% organic dog food you can feel great about</strong></p>
         </div>
@@ -78,7 +98,7 @@
     <div class="container-fluid" id="recipes">
         <div class="row w-100">
             <h1 class="recipe-header">Pick from Our 3 Amazing Recipes</h1>
-            <p class="recipe-header-description">Any of Our 3 Veterinary Formulated Recipes</p>
+            <p class="recipe-header-description">All Veterinary Formulated Recipes</p>
             <section class="card-index">  
                 <% allRecipes.forEach((recipe, index) => { %>
                     <div class="card">
