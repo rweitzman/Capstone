@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">>    
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <title>Aria</title>
 </head>
@@ -15,21 +19,23 @@
 
     <div class="container-fluid">
             <div class="row nav-bar">
-                        <div class="navbar-brand col-4">
+                        <div class="navbar-brand aria">
                             <a class="navbar-item" href="/#home">Aria</a>
                         </div>
                         <div>
-                            <a class="navbar-item col-4" id="myBtn">Sign Up</a>
+                            <a class="navbar-item sign-up" id="myBtn">Sign Up</a>
                         </div>
                         <div>
-                            <a class="navbar-item col-4" id="myBtn2">Sign In</a>
+                            <a class="navbar-item sign-in" id="myBtn2">Sign In</a>
                         </div>
             </div>
     </div>
 
     <div class="container-fluid">
         <div class="row landing-img">
-            <button class="hero-button">CLICK</button>
+            <button class="hero-button"><b>See Our Recipes</b></button>
+            <p class="hero-heading">Fresh Made 100% Organic Dog Food</p>
+            <p class="hero-description"><strong>Let us help you stop feeding your dog that CRUDDY food! Freshly made, nutritionally balanced, 100% organic dog food you can feel great about</strong></p>
         </div>
     </div>
 
@@ -37,7 +43,7 @@
         <div class="row w-100">
             <section class="col infographics">
                 <ul>
-                    <li class="icon"><i class="fas fa-dog"></i></li>
+                    <i class="fas fa-dog"></i>
                     <li class="graphics"><p class="info">Human-Grade Food</p></li>
                     <li class="graphics"><p class="human-grade">The best quality ingredients for all of your family members</p></li>
                 </ul>
@@ -45,15 +51,15 @@
 
             <section class="col infographics">
                 <ul>
-                    <li class="icon"><i class="fas fa-seedling"></i></li>
+                    <i class="fas fa-seedling"></i>
                     <li class="graphics"><p class="info">100% Organic Ingredients</p></li>
-                    <li class="graphics"><p class="organic">Good for you pet, good for the Earth</p></ul></li>
+                    <li class="graphics"><p class="organic">Good for your pet, good for the Earth</p></ul></li>
                 </ul>
             </section>
 
             <section class="col infographics">
                 <ul>
-                    <li class="icon"><i class="fa-solid fa-heart"></i></li>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
                     <li class="graphics"><p class="info">Grassfed and Pasture Raised</p></li>
                     <li class="graphics"><p class="grassfed">Humane meat to keep your pet and the ecosystems healthy</p></li>    
                 </ul>
@@ -61,10 +67,18 @@
 
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img class="bowl" src="https://perfectlyrawsome.com/wp-content/uploads/2019/06/49432667_2246837515588357_7921554165103329280_o.jpg">
+        </div>
+    </div>
     
 
     <div class="container-fluid" id="recipes">
         <div class="row w-100">
+            <h1 class="recipe-header">Pick from Our 3 Amazing Recipes</h1>
+            <p class="recipe-header-description">Any of Our 3 Veterinary Formulated Recipes</p>
             <section class="card-index">  
                 <% allRecipes.forEach((recipe, index) => { %>
                     <div class="card">
@@ -82,50 +96,37 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <img class="bowl" src="https://perfectlyrawsome.com/wp-content/uploads/2019/06/49432667_2246837515588357_7921554165103329280_o.jpg">
+    <div class="container-fluid" id="recipes">
+        <div class="row w-100">
+            <h1 class="recipe-header">Ready, Set, Go!</h1>
+            <p class="recipe-header-description">How Our Service Works </p>
+            <section class="hiw-index">  
+                    <div class="card hiw">
+                        <div class="hiw__header"><p> recipe.name </p></div>
+                        <div class="hiw__content">
+                            <img src=" recipe.img %>">
+                            <p><recipe.description %></p>
+                        </div>
+    
+                        <div class="hiw__footer"><a href=""><button>recipe.name </button> </a> </div>  
+                    </div>
+            </section>
+            <section class="hiw-index">  
+                <div class="card hiw">
+                    <div class="hiw__header"><p> recipe.name </p></div>
+                    <div class="hiw__content">
+                        <img src=" recipe.img %>">
+                        <p><recipe.description %></p>
+                    </div>
+
+                    <div class="hiw__footer"><a href=""><button>recipe.name </button> </a> </div>  
+                </div>
+        </section>
         </div>
-        <button><a href="/#myBtn">Go To Sign-Up</a></button>
-        <button><a href="/#recipes">Go To Recipes</a></button>
     </div>
     
-    <div class="container-fluid">
-        <div class="row w-100">
-            <section class="col how-it-works">
-                <ul>
-                    <li class="how"><p class="how-to">Create Free Account</p></li>
-                    <li class="how"><p class="human-grade">Sign up for free! Customize our service for your pup's dietary needs"</p></li>
-                </ul>
-                <button><a href="/#myBtn">Go To Sign-Up</a></button>
-            </section>
 
-            <section class="col how-it-works">
-                <ul>
-                    <li class="how"><p class="how-to">Select Recipes</p></li>
-                    <li class="how"><p class="organic">Choose from our recipes to fit your fur baby's needs! Select as many as you'd like and change at amny time.</p></ul></li>
-                </ul>
-                <button><a href="/#recipes">Go To Recipes</a></button>
-            </section>
-
-            <section class="col how-it-works">
-                <ul>
-                    <li class="how"><p class="how-to">Choose Frequency of Servings</p></li>
-                    <li class="how"><p class="grassfed">We will help you decide on how much to feed your BFF, based on age, weight, activity, and of course, how much you'd like to provide!</p></li>    
-                </ul>
-                <button><a href="/#recipes">Go To Recipes</a></button>
-            </section>
-
-            <section class="col how-it-works">
-                <ul>
-                    <li class="how"><p class="how-to">Leave A Review</p></li>
-                    <li class="how"><p class="grassfed">Well... you don't HAVE to, but leaving a comment will help tell our community how we are doing!</p></li>    
-                </ul>
-                <button><a href="/#recipes">Go To Recipes</a></button>
-            </section>
-
-        </div>
-    </div>
+    
 
     
     

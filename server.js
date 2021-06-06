@@ -1,34 +1,24 @@
 // * === Const and Require === * //
 const express = require("express");
 const db = require("./models");
-// const controllers = require("./controllers");
+const controllers = require("./controllers");
 const app = express();
 const PORT = 3000;
 // const methodOverride = require("method-override");
 app.set("view engine", "ejs");
 // require("dotenv").config();
 // const { response } = require("express");
-// const router = express.Router();
+const router = express.Router();
 // const session = require("express-session");
 // const MongoStore = require("connect-mongo");
 // const bcrypt = require("bcryptjs");
 
+/** MiddleWare **/
+app.use(express.urlencoded({ extended: true }));
 
 
-app.get("/", function (req, res) {
-    const context = {
-        allRecipes: db.Recipes,
-    };
-    res.render("home", context);
-});
-
-app.get("/Recipes/:index", function (req, res) {
-    const context = {
-        Recipes: db.Recipes[req.params.index],
-    };
-   res.render("recipe", context) 
-});
-
+/** Controllers **/
+app.use("/", controllers.recipes);
 
 /**** SERVE IMAGES AND CSS ****/
 app.use(express.static(__dirname + "/public"));
