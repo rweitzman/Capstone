@@ -1,7 +1,18 @@
-const Recipes = [
-        {name: "Beef and Potatoes", img: "/images/beefdogfood.jpeg", ingredients: "Beef, potaotes", description: "Beef and potatoes to keep your dog happy and fed"},
-        {name: "Chicken and Rice", img: "/images/chickendogfoodbowl.jpeg", ingredients: "Chicken, rice", description: "Chicken and rice to keep your dog happy and fed"},
-        {name: "Salmon and Squash", img: "/images/salmondogfoodbowl.jpeg", ingredients: "Salmon, squash", description: "Salmon and squash to keep your dog happy and fed"},
-];
+const mongoose = require("mongoose");
 
-module.exports = Recipes;
+const recipeSchema = new mongoose.Schema (
+    {
+        name: {type: String, required: true},
+        img: {type: String, required: true},
+        ingredients: {type: String, required: true},
+        description: {type: String, required: true},
+        reviews: [{type: mongoose.Schema.Types.ObjectId, ref: "Review"}]
+    },
+    {
+        timestamps: true,
+    }
+);
+
+const Recipe = mongoose.model("Recipe", recipeSchema);
+
+module.exports = Recipe;

@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">>    
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Aria</title>
 </head>
 <body>
@@ -24,29 +24,11 @@
                             <a class="navbar-item" href="/#home">Aria</a>
                         </div>
                         <div>
-                            <a class="navbar-item sign-up" id="myBtn">Sign Up</a>
+                            <a class="navbar-item sign-up" id="sign-up">Sign Up</a>
                         </div>
                         <div>
-                            <a class="navbar-item sign-in" id="myBtn2">Sign In</a>
-                        </div>
-
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                              <span class="close">&times;</span>
-                                  <h1 class="title">Log In</h1>
-                                    <form method="post" action="">
-                                      <input type="text" id="username" name="username" placeholder="Username" /><br>
-                                      <input type="password" id="password" name="password" placeholder="Password" /><br>
-                                      <input type="submit" name="Submit" id="submit" value="Submit">
-                                    </form>
-                                  <h2 class="title">Sign Up</h2>
-                                    <form method="post" action="">
-                                      <input type="text" name="location" placeholder="location info">
-                                      <br>
-                                      <input type="submit" name="Submit" id="submit" value="Sign Up">
-                                    </form>
-                            </div>
-                          </div>
+                            <a class="navbar-item sign-in" id="sign-in">Sign In</a>
+                        </div>  
             </div>
     </div>
 
@@ -108,7 +90,7 @@
                             <p><%= recipe.description %></p>
                         </div>
     
-                        <div class="card__footer"><a href="/Recipes/<%= index %>"><button><%= recipe.name %></button> </a> </div>  
+                        <div class="card__footer"><a href="/<%= recipe._id %>"><button><%= recipe.name %></button> </a> </div>  
                     </div>
                     <% }); %>
 
@@ -124,7 +106,7 @@
                     <div class="card hiw">
                         <div class="hiw__header"><p> recipe.name </p></div>
                         <div class="hiw__content">
-                            <img src=" recipe.img %>">
+                            <img>
                             <p><recipe.description %></p>
                         </div>
     
@@ -135,7 +117,7 @@
                 <div class="card hiw">
                     <div class="hiw__header"><p> recipe.name </p></div>
                     <div class="hiw__content">
-                        <img src=" recipe.img %>">
+                        <img src="">
                         <p><recipe.description %></p>
                     </div>
 

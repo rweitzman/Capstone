@@ -1,17 +1,18 @@
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-// const reviewsSchema = new mongoose.Schema(
-//     {
-//         customer: {type: String, required: true, min: 5, max: 100}
-//     },
-//     {
-//         description: {type: String, required: true, min: 10, max: 140}
-//     },
-//     {
-//         timestamps: true,
-//     }
-// );
+const reviewSchema = new mongoose.Schema (
+    {
+        name: {type: String, required: true},
+        content: {type: String, required: true},
+        recipe: {type: mongoose.Schema.Types.ObjectId, ref: "Recipe"}
+    },
+    {
+        timestamps: true,
+    }
+);
 
-// const Reviews = mongoose.model("Reviews", reviewsSchema);
+const Review = mongoose.model("Review", reviewSchema);
 
-// module.exports = Reviews;
+
+module.exports = Review;
+
