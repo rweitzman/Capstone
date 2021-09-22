@@ -1,7 +1,7 @@
 # Welcome to Aria, a subscription service for fresh dog food! #
 ## http://ariadogfood.herokuapp.com/ ##
 
-
+Capstone Bootcamp Project June, 2021
 Welcome to Aria- the online fresh dog food subscription store!
 Aria makes fresh dog food, made from 100% organic ingredients and grassfed and pasture raised meats. 
 
