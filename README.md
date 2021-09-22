@@ -1,5 +1,5 @@
 # Welcome to Aria, a subscription service for fresh dog food! #
-## WEBSITE ADDRESS GOES HERE ##
+## http://ariadogfood.herokuapp.com/ ##
 
 
 Welcome to Aria- the online fresh dog food subscription store!
